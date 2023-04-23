@@ -6,10 +6,21 @@ html {
     box-sizing: inherit;
 }
 
-.body {
-    max-width: 700px;
-    margin: auto;
+.body { 
+    resize: both;
+    overflow: auto;
+    background-image: url("images/digital.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin:  auto;
     font-size: 20px;
+    color: rgb(255, 255, 255);
 }
 
 .form {
@@ -20,7 +31,7 @@ html {
 
 .form__fieldset {
     border-radius: 20px;
-    border-color: crimson;
+    border-color: white;
 }
 
 .form__legendText {
@@ -30,7 +41,7 @@ html {
     border-width: 1px;
     padding: 10px;
     border-radius: 10px;
-    background-color: crimson;
+    background-color: rgb(36, 39, 214);
     color: white;
 }
 
@@ -53,13 +64,13 @@ html {
     padding: 10px;
     border-radius: 10px;
     border-width: 0px;
-    background-color: crimson;
+    background-color: rgb(36, 39, 214);
     color: white;
     font-size: 17px;
 }
 
 .form__button:hover {
-    background-color: rgb(173, 20, 51);
+    background-color: rgb(3, 6, 170);
 }
 
 

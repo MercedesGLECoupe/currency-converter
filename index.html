@@ -6,40 +6,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="currency-converter.css">
+    <link rel="stylesheet" href="description.css">
     <script defer src="currency-converter.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>Kantor</title>
+    <title>Kalkulator walut</title>
+    <link rel="icon" href="images/ikonkastrony1.png">
 </head>
 
 <body class="body">
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legendText">Kalkulator Walut</legend>
-            <p>
-                <label>
-                    <span class="form__labelText">Waluta</span>
-                    <select class="form__field js-select" name="currency">
-                        <option>EUR</option>
-                        <option>CHF</option>
-                        <option>GBP</option>
-                        <option>USD</option>
-                        <option>CNY</option>
-                        <option>CZK</option>
-                    </select>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <span class="form__labelText">Wpisz ilość PLN</span>
-                    <input type="number" class="form__field js-pln" min="0.01" step="0.01" autofocus
-                        placeholder="Wpisz kwotę w zł">
-                </label>
-            </p>
+    <div class="background">
+        <div class="container">
+            <form class="form js-form">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legendText">Kalkulator Walut</legend>
+                    <p>
+                        <label>
+                            <span class="form__labelText">Waluta</span>
+                            <select class="form__field js-select" name="currency">
+                                <option>EUR</option>
+                                <option>CHF</option>
+                                <option>GBP</option>
+                                <option>USD</option>
+                                <option>CNY</option>
+                                <option>CZK</option>
+                                <option>HUF</option>
+                                <option>UAH</option>
+                                <option>THB</option>
+                                <option>TRY</option>
+                                <option>ISK</option>
+                                <option>NOK</option>
+                                <option>DKK</option>
+                                <option>SEK</option>
+                                <option>ILS</option>
+                                <option>RON</option>
+                                <option>MXN</option>
+                                <option>ZAR</option>
 
-            <button class="form__button">Przelicz</button>
-            <p><strong class="js-result"></strong></p>
-        </fieldset>
-    </form>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span class="form__labelText">Wpisz ilość PLN</span>
+                            <input type="number" class="form__field js-pln" min="0.01" step="0.01" autofocus
+                                placeholder="Wpisz kwotę w zł">
+                        </label>
+                    </p>
+
+                    <button class="form__button">Przelicz</button>
+                    <p>
+                        <sthong class="js-result"></sthong>
+                    </p>
+                </fieldset>
+            </form>
+
+            <div class="description">
+                <p class="description__paragrapch">Kursy walut pochodzą z głównej sthony Narodowego Banku Polskiego
+                    (NBP).</p>
+                <p class="description__paragrapch">Link do NBP:
+                    <a target="_blank" class="link"
+                        href="https://nbp.pl/statystyka-i-sprawozdawczosc/kursy/tabela-a/">https://nbp.pl/statystyka-i-sprawozdawczosc/kursy/tabela-a/ 
+                        (otwiera się w nowej karcie)</a>
+                </p>
+                <p class="description__paragrapch">Kurs z dnia 19.04.2023</p>
+            </div>
+        </div>
+
+        <div class="containerTable">
+            <table class="table">
+                <caption>Kurs z dnia 19.04.2023</caption>
+                <tr class="tableRow">
+                    <th class=" table_rowTitle" scope="col">Nazwa waluty</th>
+                    <th class=" table_rowTitle" scope="col">Kod waluty</th>
+                    <th class=" table_rowTitle" scope="col">Kurs średni</th>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Euro</th>
+                    <td class="tableCell">EUR</td>
+                    <td class="tableCell">4,63</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Frank Szwajcarski</th>
+                    <td class="tableCell">CHF</td>
+                    <td class="tableCell">4,70</td>
+                </tr> 
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Brytyjski Funt Szterling</th>
+                    <td class="tableCell">GBP</td>
+                    <td class="tableCell">5,25</td>
+                </tr>   
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Dolar Amerykański</th>
+                    <td class="tableCell">USD</td>
+                    <td class="tableCell">4,22</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Yuan Renbimbi (Chiny)</th>
+                    <td class="tableCell">CNY</td>
+                    <td class="tableCell">4.63</td>
+                </tr>   
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Euro</th>
+                    <td class="tableCell">EUR</td>
+                    <td class="tableCell">4.63</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Korona Czeska</th>
+                    <td class="tableCell">CZK</td>
+                    <td class="tableCell">0.20</td>
+                </tr>    
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Forint (Węgry)</th>
+                    <td class="tableCell">HUF</td>
+                    <td class="tableCell">0.01</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Hrywna (Ukraina)</th>
+                    <td class="tableCell">UAH</td>
+                    <td class="tableCell">0.11</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Bat (Tajlandia)</th>
+                    <td class="tableCell">THB</td>
+                    <td class="tableCell">0.20</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Lira Turecka</th>
+                    <td class="tableCell">TRY</td>
+                    <td class="tableCell">0.22</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Korona Islandzka</th>
+                    <td class="tableCell">ISK</td>
+                    <td class="tableCell">0.03</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Korona Norweska</th>
+                    <td class="tableCell">NOK</td>
+                    <td class="tableCell">0.40</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Korona Duńska</th>
+                    <td class="tableCell">DKK</td>
+                    <td class="tableCell">0.20</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Korona Szwedzka</th>
+                    <td class="tableCell">SEK</td>
+                    <td class="tableCell">0.41</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Nowy Izraelski Szekel</th>
+                    <td class="tableCell">ILS</td>
+                    <td class="tableCell">1.16</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Korona Czeska</th>
+                    <td class="tableCell">RON</td>
+                    <td class="tableCell">0.94</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Peso Meksykańskie</th>
+                    <td class="tableCell">MXN</td>
+                    <td class="tableCell">0.23</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Rand (RPA)</th>
+                    <td class="tableCell">ZAR</td>
+                    <td class="tableCell">0.23</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="more">
+            Więcej informacji znajdziesz na głównej stronie NBP
+        </div>
+    </div>
 </body>
 
 </html>
