@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.description {
+    border: 1px;
+    background-color: rgba(255, 255, 255, 0.514);
+    min-width: 200px;
+    min-height: 180px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    color: rgb(22, 35, 145);
+}
+
+.link {
+    color: darkgreen;
+}
+
+.containerTable {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.table {
+    font-family: 'Lato', sans-serif;
+    border: 20px;
+    color: white;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    overflow-x: auto;
+}
+
+.table_rowTitle {
+    background-color: rgb(0, 0, 146);
+    border: 2px solid white;
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+.tableHeader {
+    background-color: rgba(0, 0, 255, 0.308);
+}
+
+.tableCell {
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.tableRow:nth-child(even) {
+    background-color: rgba(0, 0, 255, 0.432);
+}
+
+.tableRow:hover  {
+    background-color: rgb(41, 41, 165);
+}
+
+.more {
+    border: 2px solid white;
+    color: rgb(22, 35, 145);
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+    padding: 10px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.514);
+    -webkit-box-shadow: 2px 3px 22px 0px rgba(246, 246, 246, 0.63);
+    -moz-box-shadow: 2px 3px 22px 0px rgba(246, 246, 246, 0.63);
+    box-shadow: 2px 3px 22px 0px rgba(246, 246, 246, 0.63);
+}
