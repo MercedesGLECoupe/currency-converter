@@ -45,11 +45,12 @@ html {
     border-collapse: collapse;
 }
 
-.tableHeader {
+.tableRow__tableCell--tableHeader {
     background-color: rgba(0, 0, 255, 0.308);
+    border: 2px solid white;
 }
 
-.tableCell {
+.tableRow__tableCell {
     border: 2px solid white;
     padding: 20px;
 }
