@@ -1,6 +1,8 @@
 
 # Currency converter
 
+Link to the web: https://pawelsi.github.io/currency-converter/
+
 This is my first currency converter. Here you can convert any amount of eighteen currencies value into polish PLN:
 
  - EUR
@@ -40,4 +42,3 @@ This is my first currency converter. Here you can convert any amount of eighteen
  ## Author
 Paweł Sitkowski
 
-https://pawelsi.github.io/currency-converter/
