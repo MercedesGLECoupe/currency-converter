@@ -9,7 +9,7 @@ html {
 .body { 
     resize: both;
     overflow: auto;
-    background-image: url("images/digital.jpg");
+    background-image: url("images/galactic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
